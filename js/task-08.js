@@ -5,6 +5,7 @@ form.addEventListener("submit", submitForm);
 function submitForm() {
   if (!email.value || !password.value) {
     alert("Всі поля повинні бути заповнені");
+    event.preventDefault();
   } else {
     const userData = {
       email: email.value,
